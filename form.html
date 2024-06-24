@@ -20,17 +20,35 @@
         <label id="102">
            <p>Mobile No.<input type="number"placeholder="enter mobile no."></p>
         </label><br>
-        <div>subject:</div>
-        <select name="subject" id="subject">
+        <div>Subject:<select name="subject" id="subject">
             <option value="--select your subject--">--select your subject--</option>
             <option value="Maths">Maths</option>
             <option value="Java">Java</option>
             <option value="React">React</option>
             <option value="Python">Python</option>
-        </select><br><br>
-        <input type="number"placeholder="contact me"><br><br>
-        <textarea name="feedback"placeholder="Plz give your valuable feedback"></textarea><br>
+        </select></div><br><br>
+        <div>Contact no.<input type="number"placeholder="contact me"></div><br><br>
+       <div>Feedback:<textarea name="feedback"placeholder="Plz give your valuable feedback"></textarea></div><br>
         <button>Submit</button>
     </form> 
+    <h1 ALIGN="center">SECOND FORM</h1>
+    <form action="php">
+        <h2>payment_form</h2><br>
+        <h4>Personal Information</h4>
+        <p>Name:<input type="text" name="name" id="name"></p><br>
+        <p>Email:<input type="email" name="email" id="email"></p><br>
+        <p>Mobile no.<input type="number" name="number" id="number"></p><br>
+        <h4>Payment Information</h4>
+        <p>Card type: <select name="card" id="card">
+            <option value="--select card type--">--select card type--</option>
+            <option value="VIZA">VIZA</option>
+            <option value="RUPAY">RUPAY</option>
+            <option value="DEBIT">DEBIT</option>
+            <option value="SBI">SBI</option>
+        </select></p><br>
+        <p>Card no. <input type="number" name="number" id="number"></p><br>
+        <p>Expiration date: <input type="date" name="Expiration_date" id="expiration_date"></p><br>
+        <p>Security code: <input type="text" name="CVC"></p>
+    </form>
 </body>
 </html>
