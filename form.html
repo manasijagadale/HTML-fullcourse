@@ -6,7 +6,7 @@
     <title>Forms</title>
 </head>
 <body>
-    <form>
+    <!--<form>
         <h3>Contact me</h3>
         <label id="99">
             <p>Name:<input type="text"placeholder="enter your name"></p>
@@ -30,27 +30,36 @@
         <div>Contact no.<input type="number"placeholder="contact me"></div><br><br>
        <div>Feedback:<textarea name="feedback"placeholder="Plz give your valuable feedback"></textarea></div><br>
         <button>Submit</button>
-    </form> 
+    </form>-->
     <h1 ALIGN="center">SECOND FORM</h1>
     <form action="php">
         <h2>payment_form</h2><br>
+        <p>Required fields are followed by *</p>
         <h4>Personal Information</h4>
-        <p>Name:<input type="text" name="name" id="name"></p><br>
-        <p>Email:<input type="email" name="email" id="email"></p><br>
-        <p>Mobile no.<input type="number" name="number" id="number"></p><br>
+        <p>Name: *<input type="text" name="name" id="name" required></p>
+        <fieldset>
+            <legend>Gender *</legend>
+        <p>
+        <input type="radio" name="gender" id="male" required>Male <br>
+        <input type="radio" name="gender" id="female" required>Female <br>
+        <input type="radio" name="gender" id="neutral" required>Neutral
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="40" rows="10"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email" required></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
         <h4>Payment Information</h4>
-        <p>Card type: <select name="card" id="card">
+        <p>Card type: *<select name="card_type" id="card_type" required>
             <option value="--select card type--">--select card type--</option>
             <option value="VIZA">VIZA</option>
             <option value="RUPAY">RUPAY</option>
-            <option value="DEBIT">DEBIT</option>
+            <option value="MASTERCARD">MASTERCARD</option>
             <option value="SBI">SBI</option>
-        </select></p><br>
-        <p>Card no. <input type="number" name="number" id="number"></p><br>
-        <p>Expiration date: <input type="date" name="Expiration_date" id="expiration_date"></p><br>
-        <p>Security code:<input type="text"></p><br>
-        <button>submit</button>
-        <button>reset</button>
+        </select></p>
+        <p>Card number: *<input type="number" name="card_number" id="card_number" required></p>
+        <p>Expiration date: *<input type="date" name="Expiration_date" id="expiration_date" required></p>
+        <p>CVV: *<input type="password" name="CVV" id="CVV" required></p>
+        <input type="submit" value="Pay Now">
     </form>
 </body>
 </html>
